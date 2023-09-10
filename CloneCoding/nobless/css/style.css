@@ -1,0 +1,339 @@
+a{
+  color:#000;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+input[type="checkbox"] {
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 18px;
+  outline: 0;
+  width: 18px;
+}
+
+/* header start */
+div.coupon{
+  position: absolute;
+  text-align: center;
+  background: black;
+  padding: 10px 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+div.coupon p{
+  font-weight: 600;
+  color: white;
+}
+div.coupon i{
+  color: rgb(255, 0, 0);
+}
+div.top-section{
+  margin-top: 80px;
+  border-bottom: 1px solid #000;
+}
+div.top-section div.top-container{
+  display: flex;
+  margin: 0 50px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.top-section div.top-container .logo{
+  width: 300px;
+  height: 35px;
+}
+
+div.top-section div.top-container .logo img{
+  width: 100%;
+  height: 100%;
+}
+div.top-section div.top-container div.search{
+  display: flex;
+  align-items: end;
+}
+div.top-section div.top-container div.search input{
+  width: 500px;
+  height: 22px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+div.top-section div.top-container div.search a{
+  font-size: 26px;
+  margin: 0;
+  color: black;
+}
+
+div.top-section div.top-container div.user a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, .8);
+  margin: 0 5px;
+}
+
+div.top-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.top-menu ul{
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+  margin: 0px 50px
+}
+
+div.top-menu a{
+  padding: 15px 15px;
+  font-size: 0.9em;
+}
+
+div.top-menu div.category li:first-child{
+  border-right: 1px solid #AAA;
+}
+div.top-menu div.category li:last-child a{
+  color: red;
+}
+
+div.top-menu div.intro{
+  padding: 15px 15px;
+  font-size: 1.1em;
+}
+/* header end*/
+
+/* login-section start */
+main.login-section{
+  position: relative;
+  width: 100%;
+}
+div.login-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 565px;
+  margin: 0 auto;
+}
+main.login-section div.login-content > div{
+  width: 100%;
+}
+
+main.login-section div.login-content div.login-top{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+main.login-section div.login-content div.login-process{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main.login-section div.login-content div.login-process p span{
+  margin: 0px 20px;
+  font-size: 1.2em;
+}
+
+main.login-section div.login-content div.login-process p span:nth-of-type(2){
+  font-weight: 600;
+}
+
+main.login-section div.login-content div.login-info p{
+  margin-left: 10px;
+}
+
+main.login-section div.login-content div.login-info p span{
+  color: red;
+  font-size: .7em;
+}
+
+main.login-section div.login-content > div > div > input[type=text]{
+  margin: 0px 5px;
+  width: 95%;
+  height: 30px;
+  border: 1px solid #D1D1D1;
+  border-radius: 3px;
+}
+
+main.login-section div.login-content > div > div > p{
+  margin-left: 5px;
+}
+
+main.login-section div.login-content > div > div > div.info-agree{
+  display: flex;
+  align-items: center;
+}
+
+main.login-section div.login-content > div > div > div.info-agree > input{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #C9C9C9;
+}
+
+main.login-section div.login-content > div > div > div.info-agree p{
+  display: inline;
+  margin-left: 5px;
+}
+
+main.login-section div.login-content > div > div.userinfo-address button{
+  border: none;
+  width: 20%;
+  height: 35px;
+  background: #000;
+  color: #FFF;
+}
+
+main.login-section div.login-content > div > div.userinfo-address div.address-search input{
+  margin: 0px 5px;
+  margin-bottom: 5px;
+  width: 74%;
+  height: 30px;
+  border: 1px solid #D1D1D1;
+  border-radius: 3px;
+}
+main.login-section div.login-content > div > div.userinfo-address > input:nth-of-type(1){
+  margin-bottom: 5px;
+}
+
+main.login-section div.login-content > div > div.altinfo{
+  margin-top: 30px;
+}
+main.login-section div.login-content > div > div.altinfo p:first-child{
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+main.login-section div.login-content > div.login-btn{
+  margin-top: 20px;
+  text-align: center;
+}
+main.login-section div.login-content > div.login-btn button{
+  width: 48%;
+  height: 50px;
+  border: none;
+  padding: 0;
+  
+}
+main.login-section div.login-content > div.login-btn button.next{
+  background: black;
+  color: #FFF;
+}
+
+main.login-section div.login-content > div.login-btn button.prev{
+  background: #DCDCDC;
+}
+/* login-section end */
+
+/* footer start*/
+div.bot-section{
+  margin-top: 400px;
+  width: 100%;
+  background: #000;
+}
+div.bot-section div.bot-container{
+  margin: 0px 60px;
+  padding: 50px 0;
+}
+
+div.bot-section div.logo-section{
+  display: flex
+}
+
+div.bot-section div.logo-section > a{
+  width: 200px;
+}
+
+div.bot-section div.logo-section > a > img{
+  width: min(200px,100%);
+  height: 100%;
+}
+
+.business-info{
+  width: 500px;
+  margin-left: 100px;
+}
+.business-info a{
+  color: #FFF;
+  margin: 0 10px;
+  font-size: .9em;
+}
+
+div.company-info .com-info i{
+  color: #FFF;
+  font-style: normal;
+  font-size: .8em;
+  padding: 0px 5px;
+}
+div.company-info .com-info i:nth-of-type(3n+2){
+  border-left: 1px solid rgba(255, 255, 255, .5);
+  border-right: 1px solid rgba(255, 255, 255, .5);
+
+}
+
+div.contact{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.contact div.user-center i{
+color: #FFF;
+font-style: normal;
+padding: 0px 10px;
+}
+div.contact div.user-center i:first-child{
+  border-right: 1px solid rgba(255, 255, 255, .5);
+}
+div.contact div.sns{
+  display: flex;
+}
+div.contact div.sns p{
+  color: #FFF;
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+div.contact div.sns p > i{
+  margin-right: 10px;
+}
+
+div.copy{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.copy p:first-child{
+  color: #FFF;
+  font-size: .9em;
+}
+div.copy p i{
+  font-style: normal;
+  color: #AAA;
+  font-size: .8em;
+}
+/* footer end */
+/* side-bar start */
+div.side-bar{
+  position: fixed;
+  top: 70vh;
+  right: 10px;
+}
+div.side-bar nav div{
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background: #AAA;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2em;
+}
+div.side-bar nav div i{
+  transform: translateY(2px);
+}
+div.side-bar nav div:last-child{
+  background-color: black;
+}
+div.side-bar nav div:last-child i{
+  color: #FFF;
+  border-radius: 50%;
+}
