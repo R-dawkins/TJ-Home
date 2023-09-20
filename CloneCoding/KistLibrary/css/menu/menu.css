@@ -1,0 +1,44 @@
+.menu-section-wrap {
+  width: 100%;
+  background: rgba(36, 32, 30, 0.5);
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.menu-section-wrap .menu-section {
+  width: 1200px;
+  margin: 0 auto;
+}
+.menu-section-wrap .menu-section .menu-wrap {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.menu-section-wrap .menu-section .menu-wrap .menu-li {
+  width: 20%;
+  border-color: rgba(0, 0, 0, 0);
+}
+.menu-section-wrap .menu-section .menu-wrap .menu-li.active {
+  background-color: #fff;
+}
+.menu-section-wrap .menu-section .menu-wrap .menu-li.active .menu-a {
+  color: rgb(201, 44, 6);
+  border-bottom: 5px solid rgb(201, 44, 6);
+}
+.menu-section-wrap .menu-section .menu-wrap .menu-li .menu-a {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  height: 55px;
+  line-height: 55px;
+}
+.menu-section-wrap .menu-section .menu-wrap .menu-li .menu-drop .menu-drop-li .menu-drop-a {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 11px 15px;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+}/*# sourceMappingURL=menu.css.map */
