@@ -1,0 +1,11 @@
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 680px;
+  height: auto;
+  font-size: 15px;
+}
+.main-container .main-wrap {
+  width: 100%;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */

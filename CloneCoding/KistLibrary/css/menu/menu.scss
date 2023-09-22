@@ -1,24 +1,32 @@
+@use '../mixin.scss' as m;
+
 .menu-section-wrap{
   width: 100%;
   background: rgba(36,32, 30, 0.5);
   box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  height: 55px;
+  @media (max-width: 1024px){
+    display: none;
+  }
   .menu-section{
     width: 1200px;
     margin: 0 auto;
+    position: relative;
+    @media #{m.$max-lg}{
+      width: 100%;
+    }
+    
     .menu-wrap{
       width: 100%;
       margin: 0 auto;
       display: flex;
+      position: absolute;
       .menu-li{
+        display: block;
         width: 20%;
+        height: 100%; //li가 active 될 때 height 값을 줘 놓지 않으면 다른 li의 height도 같이 늘어나는 버그있음
         border-color: rgba(0, 0, 0, 0);
-        &.active{
-          background-color: #fff;
-          .menu-a{
-            color: rgb(201, 44, 6);
-            border-bottom: 5px solid rgb(201, 44, 6);
-          }
-        }
         .menu-a{
           display: block;
           width: 100%;
@@ -30,15 +38,34 @@
           line-height: 55px;
         }
         .menu-drop{
+          // position: absolute;
           .menu-drop-li{
             .menu-drop-a{
-              display: block;
+              display: none;
+              // background: #fff;
+              // display: block;
               width: 100%;
               font-size: 13px;
               box-sizing: border-box;
-              padding: 11px 15px;
+              padding: 11.5px 15px;
               font-weight: 600;
-              border-bottom: 1px solid #ddd;
+              border: 1px solid #ddd;
+              transition: color .3s;
+              &:hover{
+                color: rgb(201, 44, 6);
+              }
+            }
+          }
+        }
+        &.active{
+          background-color: #fff;
+          .menu-a{
+            color: rgb(201, 44, 6);
+            border-bottom: 5px solid rgb(201, 44, 6);
+          }
+          .menu-drop-li{
+            .menu-drop-a{
+            display: block;
             }
           }
         }
