@@ -1,0 +1,88 @@
+@use '../mixin.scss' as m;
+
+.quick-menu-container{
+  width: 1200px;
+  margin: 0 auto;
+  @media #{m.$max-lg}{
+    width: 100%;
+  }
+  .quick-menu-wrap{
+    display: flex;
+    transform:translateY(-50%);
+    align-items: center;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+    @media #{m.$max-sm}{
+      transform: none;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: none;
+    }
+    
+    li{
+      width: 12.5%;
+      background: #fff;
+      box-sizing: border-box;
+      transition:ease-in-out 0.3s;
+      &:hover{
+        transform: translateY(-30px);
+      }
+      @media #{m.$max-sm}{
+        width: 25%;
+      }
+      &:nth-child(1) a{
+        background:#FFF url(../img/quick_i01.png) no-repeat center 35px;
+      }
+      &:nth-child(2) a{
+        background:#FFF url(../img/quick_i02.png) no-repeat center 35px;
+      }
+      &:nth-child(3) a{
+        background:#FFF url(../img/quick_i03.png) no-repeat center 35px;
+      }
+      &:nth-child(4) a{
+        background:#FFF url(../img/quick_i04.png) no-repeat center 35px;
+      }
+      &:nth-child(5) a{
+        background:#FFF url(../img/quick_i05.png) no-repeat center 35px;
+      }
+      &:nth-child(6) a{
+        background:#FFF url(../img/quick_i06.png) no-repeat center 35px;
+      }
+      &:nth-child(7) a{
+        background:#FFF url(../img/quick_i07.png) no-repeat center 35px;
+      }
+      &:nth-child(8) a{
+        background:#FFF url(../img/quick_i08.png) no-repeat center 35px;
+      }
+      &:not(:last-child) a{
+        border-right: 1px solid #ddd;
+        box-sizing: border-box;
+      }
+      &:nth-child(1n+1) a{
+        @media #{m.$max-sm} {
+          background-position: center 15px !important;
+        }
+      }
+      a{
+        display: block;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 95px 0px 35px 0px;
+
+        @media #{m.$max-sm}{
+          padding: 70px 0 0 0;
+          min-height: 110px;
+          border: 1px solid #ddd;
+        }
+        span{
+          // display: block;
+          word-break: keep-all;
+          font-size: 14px;
+          font-weight: 700;
+          @media #{m.$max-sm}{
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}

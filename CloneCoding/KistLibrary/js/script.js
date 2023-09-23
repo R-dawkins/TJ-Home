@@ -23,3 +23,22 @@
   // document.querySelectorAll('.menu-a').forEach((li)=>{
   // })
 }
+
+{
+  window.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.carousel', {
+      //autoplay:false,
+      autoplay: { delay: 5000,},
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      spaceBetween:  30,
+      slidesPerView: 3,
+      slidesPerGroup : 3,
+    });
+    // swiper()
+  })
+  
+}
