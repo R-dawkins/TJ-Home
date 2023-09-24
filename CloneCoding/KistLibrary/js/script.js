@@ -22,7 +22,7 @@
   })//menu-a foreach
   // document.querySelectorAll('.menu-a').forEach((li)=>{
   // })
-}
+}//menu
 
 {
   window.addEventListener('DOMContentLoaded', () => {
@@ -34,11 +34,33 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      spaceBetween:  30,
+      // freemode:false,
+      // spaceBetween:  100,
       slidesPerView: 3,
       slidesPerGroup : 3,
+      breakpoints: {
+      767: {
+        spaceBetween: 30,
+        slidesPerView: 3,
+        slidesPerGroup : 3,
+      }
+      },
     });
-    // swiper()
   })
   
+  
+}//swiper
+
+{
+  let main = document.querySelector('.main-container');
+  let mainT = main.offsetTop;
+  let scry = window.scrollY
+  window.addEventListener('scroll',()=>{
+    scry = window.scrollY
+      scroll()
+  })
+  function scroll(){
+    if(scry >= mainT){document.querySelector('.menu-section-wrap').classList.add("active")}
+    else{document.querySelector('.menu-section-wrap').classList.remove("active")}
+  }
 }

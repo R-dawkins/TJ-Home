@@ -5,6 +5,15 @@
   position: absolute;
   height: 55px;
 }
+.menu-section-wrap.active {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background: #fff;
+}
+.menu-section-wrap.active .menu-section .menu-wrap .menu-li a {
+  color: black;
+}
 @media (max-width: 1024px) {
   .menu-section-wrap {
     display: none;

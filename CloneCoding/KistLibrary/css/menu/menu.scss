@@ -6,6 +6,21 @@
   box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
   position: absolute;
   height: 55px;
+  &.active{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    background: #fff;
+    .menu-section{
+      .menu-wrap{
+        .menu-li{
+          a{
+            color: black;
+          }
+        }
+      }
+    }
+  }
   @media (max-width: 1024px){
     display: none;
   }
