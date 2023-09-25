@@ -253,6 +253,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.notice-text-wrap .notice li a:hover span {
+  text-decoration: underline;
+}
 @media screen and (max-width: 767px) {
   .notice-text-wrap .notice li a {
     padding: 10px 0;
@@ -362,6 +365,9 @@
   margin-bottom: 20px;
   font-weight: 600;
   padding-right: 10px;
+}
+.learn-text-wrap .info li .right-area a:hover span {
+  text-decoration: underline;
 }
 .learn-text-wrap .info li .right-area a .info-text {
   width: 100%;

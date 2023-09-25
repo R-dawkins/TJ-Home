@@ -25,15 +25,6 @@
   width: 12.5%;
   background: #fff;
   box-sizing: border-box;
-  transition: ease-in-out 0.3s;
-}
-.quick-menu-container .quick-menu-wrap li:hover {
-  transform: translateY(-30px);
-}
-@media screen and (max-width: 767px) {
-  .quick-menu-container .quick-menu-wrap li {
-    width: 25%;
-  }
 }
 .quick-menu-container .quick-menu-wrap li:nth-child(1) a {
   background: #FFF url(../img/quick_i01.png) no-repeat center 35px;
@@ -68,11 +59,32 @@
     background-position: center 15px !important;
   }
 }
+.quick-menu-container .quick-menu-wrap li:hover a {
+  margin-top: -35px;
+  background-color: #fffaf2;
+  padding: 100px 0px 65px 0px;
+}
+@media screen and (max-width: 767px) {
+  .quick-menu-container .quick-menu-wrap li:hover a {
+    padding: 70px 0 0 0;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .quick-menu-container .quick-menu-wrap li {
+    width: 25%;
+  }
+  .quick-menu-container .quick-menu-wrap li:hover span {
+    display: block;
+    transform: translateY(7px);
+  }
+}
 .quick-menu-container .quick-menu-wrap li a {
   display: block;
   text-align: center;
   box-sizing: border-box;
   padding: 95px 0px 35px 0px;
+  transition: ease-in-out 0.3s;
 }
 @media screen and (max-width: 767px) {
   .quick-menu-container .quick-menu-wrap li a {
@@ -85,6 +97,7 @@
   word-break: keep-all;
   font-size: 14px;
   font-weight: 700;
+  transition: transform 0.3s;
 }
 @media screen and (max-width: 767px) {
   .quick-menu-container .quick-menu-wrap li a span {

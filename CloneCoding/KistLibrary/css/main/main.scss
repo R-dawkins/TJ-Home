@@ -247,7 +247,9 @@
         display:flex;
         align-items: center;
         justify-content: space-between;
-
+        &:hover span{
+          text-decoration: underline;
+        }
         @media #{m.$max-sm}{
           padding: 10px 0;
         }
@@ -257,6 +259,7 @@
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
+          
           @media #{m.$max-sm}{
             font-size: 14px;
           }
@@ -340,6 +343,9 @@
           margin-bottom: 20px;
           font-weight: 600;
           padding-right: 10px;
+          &:hover span{
+            text-decoration: underline;
+          }
           .info-text{
             width: 100%;
             display: block;
