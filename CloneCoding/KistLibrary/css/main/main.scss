@@ -162,7 +162,7 @@
     font-weight: 600;
     box-sizing: border-box;
     @media #{m.$max-sm}{
-      width: 200px;
+      width: 100%;
       margin-left: -15px;
       font-size: 13px;
     }
@@ -353,6 +353,9 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             box-sizing: border-box;
+            @media #{m.$max-sm}{
+              width: 80%;
+            }
           }
         }
         .date,.place{

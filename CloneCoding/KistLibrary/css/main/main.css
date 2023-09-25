@@ -172,7 +172,7 @@
 }
 @media screen and (max-width: 767px) {
   .swiper-slide .book-title {
-    width: 200px;
+    width: 100%;
     margin-left: -15px;
     font-size: 13px;
   }
@@ -376,6 +376,11 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  .learn-text-wrap .info li .right-area a .info-text {
+    width: 80%;
+  }
 }
 .learn-text-wrap .info li .right-area .date, .learn-text-wrap .info li .right-area .place {
   display: block;
