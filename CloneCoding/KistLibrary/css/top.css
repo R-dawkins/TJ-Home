@@ -7,13 +7,13 @@
 @media screen and (max-width: 1199px) {
   .guide-section {
     height: auto;
-    padding: 10px;
+    padding: 10px 0;
   }
 }
 @media screen and (max-width: 767px) {
   .guide-section {
     height: auto;
-    padding: 10px;
+    padding: 10px 0;
     position: relative;
     margin-right: 0;
   }
@@ -33,8 +33,11 @@
 @media screen and (max-width: 767px) {
   .guide-section .guide-wrap {
     display: block;
-    padding: 35px 0 5px 30px;
+    padding: 35px 0 5px 0px;
   }
+}
+.guide-section .guide-wrap .guide-sound {
+  margin-left: 10px;
 }
 @media screen and (max-width: 767px) {
   .guide-section .guide-wrap .guide-sound img {
@@ -96,9 +99,10 @@
 @media screen and (max-width: 767px) {
   .guide-section .guide-wrap .guide-checkbox {
     position: absolute;
-    width: 93%;
+    width: 100%;
     top: 0;
-    left: 10px;
+    left: 0;
+    margin: 0 auto;
     height: 40px;
     border-bottom: 1px dotted #f09b88;
   }
@@ -106,7 +110,7 @@
 @media screen and (max-width: 767px) {
   .guide-section .guide-wrap .guide-checkbox .checkbox-wrap {
     position: absolute;
-    left: 0;
+    left: 10px;
     top: 10px;
   }
 }
@@ -129,7 +133,7 @@
   .guide-section .guide-wrap .guide-checkbox .btn-close-wrap {
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 20px;
   }
 }
 

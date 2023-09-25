@@ -41,12 +41,12 @@
 }
 
 .main-first-container {
-  padding: 0 15px;
+  padding: 0px;
   padding-bottom: 60px;
 }
 @media screen and (max-width: 767px) {
   .main-first-container {
-    padding: 0 15px;
+    padding: 0px;
   }
 }
 
@@ -356,6 +356,11 @@
 @media screen and (max-width: 1199px) {
   .learn-text-wrap .info li .right-area {
     width: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .learn-text-wrap .info li .right-area {
+    width: 65%;
   }
 }
 .learn-text-wrap .info li .right-area a {

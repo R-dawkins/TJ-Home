@@ -7,11 +7,11 @@
   background: #e03710;
   @media #{m.$max-lg}{
     height: auto;
-    padding: 10px;
+    padding: 10px 0;
   }
   @media #{m.$max-sm}{
     height: auto;
-    padding: 10px;
+    padding: 10px 0;
     position: relative;
     margin-right: 0;
   }
@@ -27,15 +27,15 @@
     }
     @media #{m.$max-sm}{
       display: block;
-      padding: 35px 0 5px 30px;
+      padding: 35px 0 5px 0px;
     }
     .guide-sound{
+      margin-left: 10px;
       @media #{m.$max-sm}{
         img{
           position: absolute;
           width: 25px;
           left: 11px;
-
         }
       }
     }//guide-sound
@@ -86,16 +86,17 @@
       }
       @media #{m.$max-sm}{
         position: absolute;
-        width: 93%;
+        width: 100%;
         top: 0;
-        left: 10px;
+        left: 0;
+        margin: 0 auto;
         height: 40px;
         border-bottom: 1px dotted #f09b88;
       }
       .checkbox-wrap{
         @media #{m.$max-sm}{
           position: absolute;
-          left: 0;
+          left: 10px;
           top: 10px;
         }
         span{
@@ -114,7 +115,7 @@
         @media #{m.$max-sm}{
           position: absolute;
           top: 10px;
-          right: 0;
+          right: 20px;
         }
       }
     }//guide-checkbox

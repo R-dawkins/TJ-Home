@@ -34,10 +34,10 @@
   }
 }
 .main-first-container{
-  padding: 0 15px;
+  padding: 0px;
   padding-bottom: 60px;
   @media #{m.$max-sm}{
-    padding: 0 15px;
+    padding: 0px;
   }
 }
 .second-container-board{
@@ -335,6 +335,9 @@
         border-left: 1px solid #ddd;
         @media #{m.$max-lg}{
           width: 70%;
+        }
+        @media #{m.$max-sm}{
+          width: 65%;
         }
         a{
           display: block;
