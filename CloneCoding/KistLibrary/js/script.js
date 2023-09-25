@@ -63,4 +63,18 @@
     if(scry >= mainT){document.querySelector('.menu-section-wrap').classList.add("active")}
     else{document.querySelector('.menu-section-wrap').classList.remove("active")}
   }
+}//scroll 이벤트
+
+{
+  if(sessionStorage.getItem('closeGuide')){
+    document.querySelector('.guide-section').style.display = 'none';
+  }
 }
+{
+  const guideClose = () => {
+    let check = document.querySelector('#dontlook').checked
+    if(check){sessionStorage.setItem('closeGuide',true)}
+    document.querySelector('.guide-section').style.display = 'none';
+  }
+  document.querySelector('.closebtn').onclick = guideClose;
+}//local storage 활용
